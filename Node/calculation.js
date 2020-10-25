@@ -47,12 +47,30 @@ function saveJSON(filename='', json='""'){
 
 const data = loadJSON('data.json')
 
+var hours = 0;
+var rate_per_hour=0;
+
 data.forEach(obj => {
     Object.entries(obj).forEach(([key, value]) => {
-      console.log(`${key} ${value}`);
+    console.log(`${key} ${value}`);
+
+
+
+    hours = (key=='hours') ? value: hours;
+    rate_per_hour = (key=='rate_per_hour')  ? value : rate_per_hour;
+    
     });
+    // provide a scope
+    let scope = {
+        hours,
+        rate_per_hour
+    }
+    let Num = operationObj.calculateValue('hours * rate_per_hour',' + rate_per_hour','hours * rate_per_hour','hours / rate_per_hour','hours * rate_per_hour',
+                                'hours * rate_per_hour','hours + rate_per_hour','hours + rate_per_hour','hours * rate_per_hour','hours * rate_per_hour',scope);
+    
+    console.log('Result : ' + Num);
     console.log('-------------------');
-  });
+});
 
 // data.push(4)
 // saveJSON('data.json', data)

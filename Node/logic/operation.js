@@ -4,48 +4,6 @@ class Operation {
     constructor() {
 
     }
-/*     calculateValue(number) {
-        
-        const result = number
-        return (result);
-
-    } */
-
-/*     calculate_Value(expression) {
-        var result=0;
-
-        let scope = {
-            a: 3,
-            b: 14
-        }
-        
-        var nodes = math.parse([
-            'f = a',
-            'g = b',
-            'f * g'
-          ]);
-
-
-        const code1 = math.compile(nodes[0]); 
-        const code2 = math.compile(nodes[1]); 
-        const code3 = math.compile(nodes[2]); 
-
-        result = code1.evaluate(scope);
-        result = code1.evaluate(scope);
-        result = code1.evaluate(scope);
-        
-        return (result);
-
-    }
- */
-
-/*     calculateValueAtOnce(scope_expression,expression) {
-        var result=0;
-        //const code = math.compile(expression);       // compile an expression
-        result = math.evaluate(expression); // evaluate the code with an optional scope
-        return (result);
-
-    } */
 
     calculateValue(expression1, expression2, expression3,expression4, expression5, expression6, 
                    expression7, expression8, expression9,expression10,
