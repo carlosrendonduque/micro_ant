@@ -65,10 +65,13 @@ data.forEach(obj => {
         hours,
         rate_per_hour
     }
-    let Num = operationObj.calculateValue('hours * rate_per_hour',' + rate_per_hour','hours * rate_per_hour','hours / rate_per_hour','hours * rate_per_hour',
+/*     let Result = operationObj.calculateValue('hours * rate_per_hour','hours + rate_per_hour','hours * rate_per_hour','hours / rate_per_hour','hours * rate_per_hour',
                                 'hours * rate_per_hour','hours + rate_per_hour','hours + rate_per_hour','hours * rate_per_hour','hours * rate_per_hour',scope);
-    
-    console.log('Result : ' + Num);
+ */
+    let Result = operationObj.calculateValue('hours * rate_per_hour','0','0','0','0',
+    '0','0','0','0','0',scope);
+
+    console.log('Result : ' + Result);
     console.log('-------------------');
 });
 
